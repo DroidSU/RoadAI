@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Sujoy Datta. Copyright (c) 2020. All rights reserved.
+  ~
+  ~ To the person who is reading this..
+  ~ When you finally understand how this works, please do explain it to me too at sujoydatta26@gmail.com
+  ~ P.S.: In case you are planning to use this without mentioning me, you will be met with mean judgemental looks and sarcastic comments.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegistrationActivity"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_register_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_logo"
+            android:scaleType="centerCrop"
+            android:layout_margin="30dp"/>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_register_contents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        app:cardMaxElevation="4dp"
+        app:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_wrapper_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Name"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true"
+                android:textColorHint="@color/choco_black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editText_register_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:textColor="@color/choco_black"
+                    android:textSize="16sp"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_wrapper_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Email Address"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true"
+                android:textColorHint="@color/choco_black"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editText_register_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:textColor="@color/choco_black"
+                    android:textSize="16sp"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_wrapper_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Password"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true"
+                android:textColorHint="@color/choco_black"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editText_register_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:textColor="@color/choco_black"
+                    android:textSize="16sp"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_below="@id/cardView_register_contents"
+        android:backgroundTint="@color/honey_color"
+        android:background="@color/honey_color"
+        android:text="Register"
+        android:textColor="@color/choco_black"/>
+
+    <TextView
+        android:id="@+id/textView_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/already_registered_sign_in"
+        android:gravity="center"
+        android:padding="4dp"
+        android:textColor="@color/gray"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:textStyle="italic"/>
+
+</RelativeLayout>

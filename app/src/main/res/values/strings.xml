@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RoadAI</string>
+    <string name="already_registered_sign_in">Already Registered? Sign In</string>
+    <string name="login">Login</string>
+    <string name="sign_up_for_a_new_account">Sign Up for a new account</string>
+    <string name="total_distance">Total Distance</string>
+    <string name="coins_per_1m">Coins per 1m</string>
+    <string name="current_user_level">current user level</string>
+    <string name="coins_earned_today">Coins earned today</string>
+</resources>

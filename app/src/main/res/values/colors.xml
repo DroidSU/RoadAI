@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#003366</color>
+    <color name="colorPrimaryDark">#003366</color>
+    <color name="colorAccent">#CCCCCC</color>
+    <color name="honey_color">#FFC30B</color>
+    <color name="honey_color_light">#80FFC30B</color>
+    <color name="honey_color_dark">#F7971E</color>
+    <color name="choco_black">#1D1818</color>
+    <color name="light_black">#1A1919</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="midnight_blue">#003366</color>
+</resources>

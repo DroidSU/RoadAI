@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Sujoy Datta. Copyright (c) 2020. All rights reserved.
+  ~
+  ~ To the person who is reading this..
+  ~ When you finally understand how this works, please do explain it to me too at sujoydatta26@gmail.com
+  ~ P.S.: In case you are planning to use this without mentioning me, you will be met with mean judgemental looks and sarcastic comments.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:lottie_fileName="anim_loading.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
